@@ -2,6 +2,12 @@ package problems;
 
 /**
  * Created by wanghongkai on 2017/1/16.
+ *
+ * 问题：将一个字符串转为正数，实现atoi的功能
+ *
+ * 思路：注意正负号，注意溢出判断
+ *
+ * 更优解法：优化溢出时的判断，参考p007
  */
 public class P008_string_to_integer {
     public static int myAtoi(String str) {

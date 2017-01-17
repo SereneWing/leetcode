@@ -5,6 +5,17 @@ import java.util.List;
 
 /**
  * Created by wanghongkai on 2017/1/10.
+ *
+ * 问题：倒转一个整数
+ *
+ * 思路：用long存放该整数，倒转以后判断是否超出Integer的范围
+ *
+ * 更优解法：如果倒转之后会溢出，说明原来的数有10位（2147483647）
+ *         假设一个正数倒转“后9位”以后没有超过214748364，但当加上第10位时却溢出了，那么第10位必须大于等于7，
+ *         这种情况下，原数超过了2147483647，在Integer的范围外。所以一个正数倒转后9位没溢出，则肯定不会溢出
+ *         负数同理
+ *         因此，只需要在每次倒转以后判断(y > INT_MAX/10 || y < INT_MIN/10)，true则溢出
+ *
  */
 public class P007_reverse_integer {
     public static int reverse1(int x) {

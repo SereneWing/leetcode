@@ -5,6 +5,10 @@ import java.util.Map;
 
 /**
  * Created by wanghongkai on 2017/1/6.
+ *
+ * 问题：求一个整数数组中是否存在两个数字之和为目标数
+ *
+ * 思路：使用一次遍历的Map
  */
 public class P001_two_sum {
     public static int[] twoSum(int[] numbers, int target) {

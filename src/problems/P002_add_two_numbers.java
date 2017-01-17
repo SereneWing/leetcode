@@ -2,6 +2,10 @@ package problems;
 
 /**
  * Created by wanghongkai on 2017/1/6.
+ *
+ * 问题：求两个用特定结构表示的整数的和，该结构为链表，由个位开始组织成一个数
+ *
+ * 思路：用一个数表示是否进位，同步遍历两个链表，一个当前节点为空另一个不为空时，用特殊的构造的为0的节点代替，直到两个都为空，检查进位
  */
 public class P002_add_two_numbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

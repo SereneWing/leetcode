@@ -2,6 +2,11 @@ package problems;
 
 /**
  * Created by wanghongkai on 2017/1/7.
+ *
+ * 问题：给出两个正序整形数组，找出中位数
+ *
+ * 思路：用4个指针：每个数组前后各一个，从两边同步逼近两个数组。对于总个数是奇数或者偶数，最后选择不同的中位数计算方案
+ *
  */
 public class P004_median_two_arrays {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {

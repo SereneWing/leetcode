@@ -2,6 +2,27 @@ package problems;
 
 /**
  * Created by wanghongkai on 2017/1/9.
+ *
+ * 问题：将一个字符串用锯齿方式排列，并从左至右从上至下依次输出该排列方式下的字符
+ *      排列方式大概如下：
+ *
+ *      a       i       q
+ *      b     h j     p r
+ *      c   g   k   o   s
+ *      d f     l n     t
+ *      e       m       u
+ *
+ * 思路：将结构简化如下：
+ *
+ *      a   i   q
+ *      b h j p r
+ *      c g k o s
+ *      d f l n t
+ *      e   m   u
+ *
+ *      按这种结构放在二维数组中，另一个二维数组存放对应位置是否有字符，根据标志二维数组进行输出
+ *      注意当条件中行数为1时直接输出原字符串即可
+ *
  */
 public class P006_zigzag {
     public static String convert(String s, int numRows) {
